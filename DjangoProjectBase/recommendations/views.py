@@ -9,7 +9,7 @@ from movie.models import Movie
 
 # Cargar la API Key
 load_dotenv('api_keys.env')
-client = OpenAI(api_key=os.environ.get('openai_apikey'))
+client = OpenAI(api_key=os.environ.get('api_key'))
 
 # Función para calcular similitud de coseno
 def cosine_similarity(a, b):
